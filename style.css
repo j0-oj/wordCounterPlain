@@ -43,37 +43,37 @@
 
  }
 
- .bar > *{
+ .bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #778899;
   border-radius: 15px;
   max-width: 80%;
   padding: 20px;
   margin: auto;
- }
 
- .bar {
-  display: flex;
  }
 
  .right {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  /* justify-content: flex-end; */
  }
 
  .left {
   display: flex;
-  flex-direction: row;
+  gap: 5px;
+  /* flex-direction: row; */
  }
 
- .flex-container-filter-left {
-  display: flex;
-  flex-direction: row;
+ input[type="text"] {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc
  }
 
- .flex-container-filter-right {
-  display: flex;
-  justify-content: flex-end;
- }
 
  /* label {
   margin:0 10px 10px 0;

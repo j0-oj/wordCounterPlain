@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" /> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+        </style>
     <title>Word Counter</title>
-</head>
-<body>
-    <h1>Hi</h1>
     <script src="main.js">
     </script>
+</head>
+<body>
+    <h1 class="title">Word Counter</h1>
+
+    <div class="bar">
+        <div class="flex-container-filter-left">
+            <form class="poppins-light">
+                <input type="radio" id="ignoreCitation" name="fav_language" value="ignoreCitation">
+                <label for="ignoreCitation">Ignore In-text Citations</label>
+                <input type="radio" id="autoSave" name="fav_language" value="autoSave">
+                <label for="autoSave">Auto Save</label>
+            </form>
+        </div>
+        <div class="flex-container-filter-right">
+            <form class="poppins-light">
+                <label for="maxWords">Max Words </label>
+                <input type="text" id="maxWords" name="maxWords">
+            </form>
+        </div>
+    </div>
 </body>
 </html>
 
